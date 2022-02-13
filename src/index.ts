@@ -1,7 +1,7 @@
 import * as http from "http";
 import App from "./app";
 import { APILogger } from "./logger/api.logger";
-require('dotenv').config()
+require("dotenv").config();
 
 const port = process.env.PORT || 3070;
 
@@ -12,10 +12,7 @@ server.listen(port);
 const logger = new APILogger();
 
 server.on("listening", function (): void {
-	// console.log('server ', server)
-	// const addr = server.address();
-	// const bind = (typeof addr === "string") ? `pipe ${addr}` : `port ${addr.port}`;
-	// logger.info(`Listening on ${bind}`, null);
+  logger.info(`Listening on ${port}`, null);
 });
 
 module.exports = App;
