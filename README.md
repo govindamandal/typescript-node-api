@@ -6,6 +6,8 @@ This project was created for [react-typescript-checkout](https://github.com/govi
 
 In the project directory, you can run:
 
+### `npm install` OR `yarn install`
+
 ### `npm start || npm satart:dev` OR `yarn start || yarn satart:dev`
 
 Runs the app in the development mode.\
